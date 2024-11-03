@@ -1,0 +1,13 @@
+ &NEWRUN
+  NLTORE=.T., MODE = 1,
+  EQNAME='he18696_290_10a',
+  NG=401,
+  RFOUR(1)=2, NTOR=-2,
+  Q0ZYL=1.0221,
+  DSURF = 0.0, DSURF1 =-0.9, DSURF2 =0., DSURF3 =0.,IDPOW=1,
+  GAMMA=0.0,
+  IEQ =4, IAS=1,
+  SBEG = 0.01, SEND = 0.99,
+  XMIN=0., XMAX=1., YMIN=0.,   YMAX=4.,
+ &END
+ &NEWRUN   MODE = 0,   &END                                                  

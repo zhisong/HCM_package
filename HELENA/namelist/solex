@@ -1,0 +1,14 @@
+ &SHAPE    ELLIP = 0.9963,  MHARM=32,  ISOL=1, IAS=0,
+           IMESH=1, AMESH=5., BMESH=-8.3,
+           &END 
+ &PROFILE  IGAM  = 1, AGA=0.,
+           IPAI  = 1, API=0.                                   &END
+                                                               &END
+ &PHYS     EPS   = 0.171573,                                   &END
+ 
+ &NUM      NR =51, NP =33,  NRMAP=101,  NPMAP =65, NCHI=65
+           NITER =25,       NMESH = 1,   AMIX =0.000           &END
+ 
+ &PRI      NPR1 = 0                                            &END
+ &PLOT     NPL1 = 1                                            &END
+ &BALL &END

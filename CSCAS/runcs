@@ -1,0 +1,36 @@
+#!/bin/bash
+#This is a shell script to run CASTOR
+#
+#Usage: gocas
+#=====                     
+
+# Input file definition    
+# =====================
+
+csdir=$PWD
+
+
+echo $csdir
+echo $heldir
+
+mkdir $csdir/cstmpdir/
+cd $csdir/cstmpdir/
+cp $csdir/plot.gnu plot.gnu
+cp $csdir/mapping/$1 fort.12
+cp $csdir/namelist/$2 fort.10 
+
+# Run
+# ===
+time $csdir/cscas.exe
+#gnuplot plot.gnu
+
+# Output
+# ======
+mv plot.eps $csdir/plot/$2.eps
+mv fort.20 $csdir/output/$2.out
+mv CASPLOT $csdir/plot/$2.ps 
+mv fort.21 $csdir/output/$2.spectrum
+rm *
+cd ..
+rmdir cstmpdir
+# End of shell script gocas 

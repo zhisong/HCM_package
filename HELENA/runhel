@@ -1,0 +1,39 @@
+#!/bin/bash
+#This is a shell script  
+# CHANGED FROM runhel_hole to bash
+# Input file definition    
+# =====================
+
+echo $PWD
+
+heldir=$PWD
+tmpdir=$PWD/tmp_hel
+
+echo $tmpdir
+
+mkdir $tmpdir
+cd $tmpdir
+
+cp $heldir/namelist/$1     fort.10 
+
+# Run
+# ===
+time $heldir/helcode.exe
+
+# Plot
+# ===
+#gnuplot $heldir/profplot.gnu
+
+# Output
+# ======
+mv fort.20 $heldir/output/$1
+mv fort.24 $heldir/output/$1.grid
+mv fort.25 $heldir/output/$1.axisprof
+mv fort.12 $heldir/mapping/$1
+
+cd $heldir
+
+rm -rf $tmpdir
+
+# End of shell script  
+
