@@ -1,0 +1,11 @@
+ &SHAPE    ELLIP = 1., TRIA = 0.,  MHARM=32,  ISOL=0, IAS=0,  &END 
+ &PROFILE  IGAM  = 5, AGA= 0,
+           IPAI  = 1, API= 0                                   &END
+                                                               
+ &PHYS     EPS   = 0.333333,     B=0.5, XIAB=1.0               &END
+ 
+ &NUM      NR =51, NP =65,  NRMAP=101,  NPMAP =65, NCHI=65     &END
+ 
+ &PRI      NPR1 = 1                                            &END
+ &PLOT     NPL1 = 1                                            &END
+ &BALL &END
