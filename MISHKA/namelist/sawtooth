@@ -1,0 +1,24 @@
+ &NEWRUN
+  EQNAME = 'sawtooth'
+  MODE=4, NLTORE = .T.,
+  NG=51,
+  RFOUR(1)= 0,
+  NTOR = -1.,
+  VSHIFT(1) = (1e-4,0.),
+  NSHIFT = 1,
+  Q0ZYL=0.9,
+  GAMMA = 0.0,
+  ASPECT = 1.,  
+  DSURF = 0.,
+  DSURF1 = 0.,
+  DSURF2 = 0.,
+  DSURF3 = 0.,
+  IDPOW = 1,
+  IEQ = 4, ALPHIN = 1.0,
+  RWALL = 1.,
+  NVPSI = 41, NGV = 41, 
+  SIGV = 0.1, IAS = 0,
+ &END
+ &NEWLAN                  &END
+ 
+ &NEWRUN   MODE = 0,      &END
