@@ -6,7 +6,7 @@
                                                                
  &PHYS     EPS   = 0.1,     B=0.5, Q95=2.1576               &END
  
- &NUM      NR =51, NP =65,  NRMAP=101,  NPMAP =100, NCHI=129, NRCUR=51, NPCUR=65, NMESH=15, NITER=30    &END
+ &NUM      NR =101, NP =65,  NRMAP=101,  NPMAP =100, NCHI=129, NRCUR=101, NPCUR=65, NMESH=15, NITER=40    &END
  
  &PRI      NPR1 = 1, NPR2 = 1                                            &END
  &PLOT     NPL1 = 1                                            &END
