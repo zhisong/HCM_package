@@ -10838,8 +10838,12 @@ c-----------------------------------------------------------------------
       write(22,12) ng,manz
       write(22,11) (rfour(m),m=1,manz)
       write(22,11) (sgrid(i),i=1,ng)
+      do i=1,ng
+        do j=1,nbg
+            IF (ABS(ev(j,i)) < 1d-80) ev(j,i) = 0.
+        enddo
+      enddo
       do 10 i=1,ng
-      IF (ABS(ev(j,i)) < 1d-80) ev(j,i) = 0.
         write(22,11) (ev(j,i),j=1,nbg)
    10 continue
    11 format(4e16.8)
