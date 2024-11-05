@@ -10829,7 +10829,6 @@ C
 C     DO 123 J = 1,NCVD
 C     DO 123 I = 1,NBG
 C        WRITE(NOUTE) EV(I,J)
-         IF (ABS(ev(j,i)) < 1d-80) ev(j,i) = 0.
 C 123 CONTINUE
 C
 c-----------------------------------------------------------------------
@@ -10840,6 +10839,7 @@ c-----------------------------------------------------------------------
       write(22,11) (rfour(m),m=1,manz)
       write(22,11) (sgrid(i),i=1,ng)
       do 10 i=1,ng
+      IF (ABS(ev(j,i)) < 1d-80) ev(j,i) = 0.
         write(22,11) (ev(j,i),j=1,nbg)
    10 continue
    11 format(4e16.8)
