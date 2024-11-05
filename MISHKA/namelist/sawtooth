@@ -1,14 +1,14 @@
  &NEWRUN
   EQNAME = 'sawtooth'
   MODE=4, NLTORE = .T.,
-  NG=51,
+  NG=801,
   RFOUR(1)= 0,
   NTOR = -1.,
-  VSHIFT(1) = (1e-4,0.),
+  VSHIFT(1) = (1e-6,0.),
   NSHIFT = 1,
   Q0ZYL=0.9,
   GAMMA = 0.0,
-  ASPECT = 1.,  
+  !ASPECT = 1.,  
   DSURF = 0.,
   DSURF1 = 0.,
   DSURF2 = 0.,
