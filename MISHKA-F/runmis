@@ -21,8 +21,8 @@ time $misdir/mishka.exe
 mv fort.20 $misdir/output/$2
 mv CASPLOT $misdir/plot/$2.ps 
 mv fort.22 $misdir/output/$2.22
-mv fort.25 $misdir/output/$2.vector
+#mv fort.25 $misdir/output/$2.vector
 rm fort.*
 cd $misdir
-rmdir $tmpmisdir
+rm -rf $tmpmisdir
 # End of shell script submis 
