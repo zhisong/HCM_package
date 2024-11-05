@@ -1,0 +1,25 @@
+ &NEWRUN
+  EQNAME = 'he_18696_290_10a',
+  MODE=4, NLTORE = .T.,
+  NG=201,
+  RFOUR(1)= -1,
+  NTOR = -1,
+  VSHIFT(1) = (0.0,0.306),
+  Q0ZYL=1.0221,
+  GAMMA = 0,
+  ASPECT = 1.,  
+  DSURF = 0.,
+  DSURF1 = -0.9,
+  DSURF2 = 0.,
+  DSURF3 = 0.,
+  IDPOW = 1,
+  IEQ = 4, ALPHIN = 1.0,
+  IFAST = 0,
+  RWALL = 1.,
+  NVPSI = 41, NGV = 41, 
+  SIGV = 0.1, IAS = 1,
+  SEND = 0.9
+ &END
+ &NEWLAN                  &END
+ 
+ &NEWRUN   MODE = 0,      &END
