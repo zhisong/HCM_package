@@ -16,6 +16,7 @@
   IDPOW = 1,
   IEQ = 4, ALPHIN = 1.0,
   RWALL = 1.,
+  XR1 = 0.44, SIG1 = 0.2,
   NVPSI = 41, NGV = 41, 
   SIGV = 0.1, IAS = 0,
  &END
